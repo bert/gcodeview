@@ -9,6 +9,7 @@ ifeq ($(OSTYPE),Darwin)
 	LDFLAGS		+= -lm -framework OpenGL
 else
 	LIBS		+= gl
+	LDFLAGS		+= -lm
 endif
 
 EXECUTABLE = gcodeview
